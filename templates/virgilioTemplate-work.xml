@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Digital Edition of ...</title><!-- you will probably come up with a better title! -->
+            <author>Nick Virgilio</author>
+            <editor>[name of editor(s) here]</editor>
+            <respStmt>
+               <resp>TEI markup done by</resp>
+               <name>[name of encoder here]</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>[name of a person or other agency responsible for making a work available, other than a publisher or distributor]</authority>
+            <pubPlace></pubPlace>
+         </publicationStmt>
+         <notesStmt>
+            <note></note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Rutgers University Library (?)</repository>
+                  <collection>Nick Virgilio Archives</collection>
+                  <idno>[is there an identifier for the archival collection]</idno>
+               </msIdentifier>
+            </msDesc> 
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+   
+  <!-- the start of your text! -->
+  <text>
+      <body>
+         
+         
+      </body>
+  </text>
+</TEI>

@@ -37,8 +37,6 @@
   <!-- the start of your text! -->
   <text>
       <body>
-         <pb facs="..images/p00001.tif"/><!-- use the <pb> tag with @facs to refernce the scanned page image for the preview -->
-         
          <cb n="1"/><!-- this is the start of the first column -->
          
          <!-- <lg> attributes: I'm using type here to distinquish between 'haiku' and 'fragment' (haiku being a full draft); corresp to record the xml:id of the "work" as it will be defined in a master list (if you decide to go that route - the 'h0001' is just a place holder/example; with the "subtype" attribute, you might choose to distinguish between haiku that are circled and/or starred (or not) - this could be useful later. I used 'circle' and 'star', but you might want to change that. I'm also working under the assumption that all starred line groups are also circled, so you might want to review the archives to see if you want a third option for 'circle/star'. Also note that I did not include 'subtype' for entries that were not circled - you might choose to add that with a value of 'null' or something. -->

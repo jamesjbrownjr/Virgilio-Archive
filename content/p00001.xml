@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Digital Edition of the The Nick Virgilio Papers</title><!-- you will probably come up with a better title! -->
+            <author>Nick Virgilio</author>
+            <editor>[name of editor(s) here]</editor>
+            <respStmt>
+               <resp>TEI markup done by</resp>
+               <name>[name of encoder here]</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>[name of a person or other agency responsible for making a work available, other than a publisher or distributor]</authority>
+            <pubPlace></pubPlace>
+         </publicationStmt>
+         <notesStmt>
+            <note>[might be useful later to note the paper used in order to establish a timeline or chonological order? you might do that here in the notesStmt]</note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Rutgers University Library (?)</repository>
+                  <collection>Nick Virgilio Archives</collection>
+                  <idno>[is there an identifier for the archival collection]</idno>
+               </msIdentifier>
+            </msDesc> 
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+   
+  <!-- the start of your text! -->
+  <text>
+      <body>
+         <pb facs="../images/p00001.tif"/><!-- use the <pb> tag with @facs to refernce the scanned page image for the preview -->
+         
+         <cb n="1"/><!-- this is the start of the first column -->
+         
+         <!-- <lg> attributes: I'm using type here to distinquish between 'haiku' and 'fragment' (haiku being a full draft); corresp to record the xml:id of the "work" as it will be defined in a master list (if you decide to go that route - the 'h0001' is just a place holder/example; with the "subtype" attribute, you might choose to distinguish between haiku that are circled and/or starred (or not) - this could be useful later. I used 'circle' and 'star', but you might want to change that. I'm also working under the assumption that all starred line groups are also circled, so you might want to review the archives to see if you want a third option for 'circle/star'. Also note that I did not include 'subtype' for entries that were not circled - you might choose to add that with a value of 'null' or something. -->
+         <lg type="haiku" corresp="#h0001" subtype="circle">
+            <l>Better the woman loves more than the man;</l>
+            <l>No woman wants to feel too sure or her man.</l>
+         </lg>
+         
+         <lg type="fragment" corresp="#h0001">
+            <l>wedding band</l>
+         </lg>
+         
+         <lg type="fragment" corresp="#h0001">
+            <l>No woman want</l>
+         </lg>
+         
+         <lg type="fragment" corresp="#h0001">
+            <l>No woman would feel to sure of her man</l>
+         </lg>
+         
+         <lg type="haiku" corresp="#h0001">
+            <l>No woman would feel too sure of her man,</l>
+            <l> hat obliges her to wear her wedding band.</l>
+         </lg>
+         
+         <lg type="haiku" corresp="#h0001">
+            <l> o woman would feel too sure of her man</l>
+            <l> hose finger would swell from the wedding band.</l>
+         </lg>
+         
+         <!-- I did not complete all the entries, just enough to cover some options. -->
+         
+         <cb n="2"/><!-- this is the start of the second column -->
+         
+         <lg type="fragment" corresp="#h0001">
+            <l>No woman would be</l>
+         </lg>
+         
+         <lg type="haiku" corresp="#h0001" subtype="star">
+            <l>No woman would feel too sure of her man,</l>
+            <l>And always reminded of her wedding band.</l>
+         </lg>
+         
+      </body>
+  </text>
+</TEI>
